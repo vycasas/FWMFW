@@ -1,0 +1,29 @@
+About:
+FWMFW (Firewall Manager for Windows) is a small utility tool to easily block multiple files through the firewall manager
+of Windows operating systems. This tool is not a firewall replacement. FWMFW still uses the operating systems firewall
+engine to add/remove inbound and outbound connection ruless. FWMFW simply offers an easier way to block multiple files
+and folders. The removal of blocked rules can also be done but this is limited within the context of FWMFW.
+
+Please see the blog posting at: http://www.dotslashzero.net/ for background about this application.
+
+Supported Systems:
+* Windows 7 and later. The application is developed and tested under Windows 8.1.
+
+Limitations:
+As this is just a small utility tool to help easily add block rules for multiple files in one go, this application is
+severely limited with the following capabilities:
+    * No GUI.
+    * All settings are done in a simple text file.
+    * Only explicitly blocks a specified program or all programs within a specified folder.
+    * Only blocks ".exe" files.
+    * Only rules created by the application can be removed from the rule sets.
+    * All block rules added applies to all protocols, network profiles, network addresses, ports, users, and machines.
+
+Future demands and needs for features (listed or not) maybe added at a later date.
+
+Building:
+To build the application, please use CMake to generate the necessary build and configuration scripts. As this
+application is designed for Windows only, Visual Studio is the best choice for building.
+
+License:
+This project is licensed under the MIT license. Please see the LICENSE file for details.
